@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="imagegallery.css" />
+</head>
+<body>
+  <header>
+    <h1>Image Gallery</h1>
+    <div class="filters">
+      <button data-filter="all">All</button>
+      <button data-filter="nature">Nature</button>
+      <button data-filter="architecture">Architecture</button>
+      <button data-filter="people">People</button>
+    </div>
+  </header>
+
+  <main class="gallery">
+    <!-- Sample image items -->
+    <div class="gallery-item" data-category="nature">
+      <img src="https://source.unsplash.com/600x400/?nature,water" alt="Nature 1" />
+    </div>
+    <div class="gallery-item" data-category="architecture">
+      <img src="https://source.unsplash.com/600x400/?architecture,building" alt="Building" />
+    </div>
+    <div class="gallery-item" data-category="people">
+      <img src="https://source.unsplash.com/600x400/?people,portrait" alt="Portrait" />
+    </div>
+    <!-- Add more images as needed -->
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox hidden">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="Expanded view" />
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+
+  <script src="imagegallery.js"></script>
+</body>
+</html>
